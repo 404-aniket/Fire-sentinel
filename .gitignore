@@ -1,0 +1,6 @@
+# (Optional) Ignore other temporary or backup files
+__pycache__/
+*.zip
+*.pyc
+.DS_Store
+Thumbs.db
