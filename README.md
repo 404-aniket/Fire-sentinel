@@ -75,5 +75,5 @@ A real-time fire detection and automatic suppression system using YOLOv8, Arduin
 ## 🤝 Authors 
 
 - [404-aniket](https://github.com/404-aniket)
-- [Shruti](https://github.com/username) <!-- Replace "username" with Shruti's GitHub username -->
+- [Shruti](https://github.com/shruti16-code) <!-- Replace "username" with Shruti's GitHub username -->
 
