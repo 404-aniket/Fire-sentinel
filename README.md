@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue?logo=python)
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-green?logo=arduino)
 ![YOLOv8](https://img.shields.io/badge/YOLO-v8-red?logo=ultralytics)
-![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 A real-time fire detection and automatic suppression system using YOLOv8, Arduino, and WhatsApp alerts.
 
@@ -37,14 +36,13 @@ A real-time fire detection and automatic suppression system using YOLOv8, Arduin
     cd fire-sentinel
     ```
 
-2. **Install Python dependencies**:
+2. **Install Python dependencies manually**:
     ```bash
-    pip install -r requirements.txt
+    pip install opencv-python ultralytics pywhatkit
     ```
-
 3. **Prepare Hardware**:
     - Upload `ARDUINO_CODE_FOR_FIRE-SENTINAL.ino` to Arduino.
-    - Wire up LEDs, buzzer, servos according to the code.
+    - Wire up LEDs, buzzer, and servos according to the code.
 
 4. **Edit Python Script**:
     - Set your IP camera URL.
@@ -59,38 +57,23 @@ A real-time fire detection and automatic suppression system using YOLOv8, Arduin
 
 ## 🤖 Arduino Role
 
-The Arduino listens to serial commands:
-| Command | Action |
-|:--------|:-------|
-| `ROTATE` | Start rotating for scanning |
-| `STOP` | Stop rotation immediately |
-| `FIRE` | Activate buzzer + CO₂ nozzle |
-| `RESUME` | Resume scanning mode |
-
-**Components controlled**:
-- 360° Servo Motor (D6)
-- 180° Servo Motor (D7)
-- Yellow, Blue, Red LEDs
-- Active Buzzer
+- Receives commands (`ROTATE`, `STOP`, `FIRE`, `RESUME`) via serial.
+- Controls servo motors for scanning and nozzle activation.
+- Handles LED indicators and buzzer alerts.
 
 ---
 
-## 🚀 Future Enhancements
+## 🧠 Python Role
 
-- Integrate flame sensors for backup detection.
-- Add GSM module for SMS alerts.
-- Deploy on Raspberry Pi for full edge computing.
-
----
-
-## 📄 License
-
-This project is licensed under the MIT License.  
-Feel free to use, modify, and share it!
+- Captures live video feed from IP camera.
+- Detects fire using YOLOv8 model.
+- Calculates fire distance and triggers Arduino actions.
+- Sends WhatsApp alerts with fire images automatically.
 
 ---
 
-## 🤝 Credits
+## 🤝 Authors 
 
-Developed with ❤️ by [404-aniket](https://github.com/404-aniket)
+- [404-aniket](https://github.com/404-aniket)
+- [Shruti](https://github.com/username) <!-- Replace "username" with Shruti's GitHub username -->
 
