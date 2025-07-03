@@ -71,6 +71,9 @@ A real-time fire detection and automatic suppression system using YOLOv8, Arduin
 - Sends WhatsApp alerts with fire images automatically.
 
 ---
+## 🖥️ project snapshots  
+    
+
 
 ## 🤝 Authors 
 
