@@ -70,11 +70,6 @@ A real-time fire detection and automatic suppression system using YOLOv8, Arduin
 - Calculates fire distance and triggers Arduino actions.
 - Sends WhatsApp alerts with fire images automatically.
 
----
-## 🖥️ project snapshots  
-    
-
-
 ## 🤝 Authors 
 
 - [404-aniket](https://github.com/404-aniket)
