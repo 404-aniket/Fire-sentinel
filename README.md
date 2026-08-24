@@ -4,7 +4,7 @@
 ![Arduino](https://img.shields.io/badge/Arduino-UNO-green?logo=arduino)
 ![YOLOv8](https://img.shields.io/badge/YOLO-v8-red?logo=ultralytics)
 
-A real-time fire detection and automatic suppression system using YOLOv8, Arduino, and WhatsApp alerts.
+Areal-time fire detection and automatic suppression system using YOLOv8, Arduino, and WhatsApp alerts.
 
 ---
 
