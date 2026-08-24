@@ -3,7 +3,9 @@
 Servo servo360;  // 360° servo for scanning
 Servo servo180;  // 180° servo for pushing CO₂ nozzle
 
-const int yellowLED = 20;
+const int yellowLED = 2;
+const int yellowLED = 2;
+const int yellowLED = 2;
 const int blueLED   = 3;
 const int redLED    = 4;
 const int buzzer    = 5;
