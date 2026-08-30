@@ -9,7 +9,7 @@ from ultralytics import YOLO
 arduino = serial.Serial('COM3', 115200, timeout=1)
 time.sleep(2)
 
-# ========== YOLO MODEL ==========
+# ========== YOLO MODELafrafads
 model = YOLO("best.pt").to("cpu")
 
 # ========== CAMERA ==========
